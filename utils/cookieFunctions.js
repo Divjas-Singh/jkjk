@@ -10,8 +10,7 @@ export const verifyLogInToken = async (req, res, next) => {
     next();
   } else {
     console.log("token not present");
-    return new Errorhandler("Unauthorized/err", 403);
-    // next();
+    next(new Errorhandler("Unauthorized/err", 403));
   }
 };
 

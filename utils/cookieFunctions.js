@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import Errorhandler from "./ErrorHandlerClass";
+import Errorhandler from "./ErrorHandlerClass.js";
 
 export const verifyLogInToken = async (req, res, next) => {
   const secretKey = process.env.JWT_SECRET_KEY;

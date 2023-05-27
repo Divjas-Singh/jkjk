@@ -43,10 +43,11 @@ export const setCookie = async (
   const x = await res.header;
 
   res.cookie(cookieType, token, {
-    httpOnly: false,
+    httpOnly: true,
     maxAge: 1000 * 60 * 15,
     sameSite: "None",
     secure: true,
+    domain: "*",
   });
   res.status(statusCode).json({
     success: true,

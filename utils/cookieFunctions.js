@@ -46,6 +46,7 @@ export const setCookie = async (
     httpOnly: false,
     maxAge: 1000 * 60 * 15,
     sameSite: "None",
+    secure: true,
   });
   res.status(statusCode).json({
     success: true,

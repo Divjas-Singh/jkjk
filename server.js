@@ -33,6 +33,7 @@ app.use(
     origin: process.env.FRONTEND_URL.split(","),
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
+    exposedHeaders: "Set-Cookie",
   })
 );
 

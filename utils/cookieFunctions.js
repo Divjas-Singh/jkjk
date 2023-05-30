@@ -47,7 +47,7 @@ export const setCookie = async (
     maxAge: 1000 * 60 * 15,
     sameSite: "None",
     secure: true,
-    domain: "http://localhost:5500/index.html",
+    domain: "http://localhost:5500",
   });
   res.status(statusCode).json({
     success: true,
